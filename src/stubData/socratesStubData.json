@@ -1,0 +1,81 @@
+{
+  "points": 8,
+  "name": "Socrates Battle Rig",
+  "description": "Tech Mech - Sharpshooter Loadout",
+  "stats": {
+    "cmd": 3,
+    "defense": 4,
+    "save": "d10(3)",
+    "move": 2
+  },
+  "equipment": [
+    {
+      "sPlacement": 1,
+      "name": "Light Minigun",
+      "useCost": {
+        "isFree": true
+      },
+      "damage": "3d6",
+      "maxDistance": 3,
+      "isReadied": true,
+      "isDestroyed": false
+    },
+    {
+      "sPlacement": 2,
+      "name": "Light Cannon",
+      "useCost": {
+        "isFree": false,
+        "readyCost": [[4, 5, 6]]
+      },
+      "damage": "2d8",
+      "minDistance": 1,
+      "maxDistance": 3,
+      "modifiers": ["AP2"],
+      "isReadied": false,
+      "isDestroyed": false
+    },
+    {
+      "sPlacement": 3,
+      "name": "Rocket Pods (x2)",
+      "useCost": {
+        "isFree": false,
+        "readyCost": [[1], [2]]
+      },
+      "damage": "2d8",
+      "maxDistance": 3,
+      "modifiers": ["IC", "AP2"],
+      "isReadied": false,
+      "isDestroyed": false
+    },
+    {
+      "sPlacement": 4,
+      "name": "Jump",
+      "useCost": {
+        "isFree": false,
+        "readyCost": [[1, 2]]
+      },
+      "effect": "Jump",
+      "maxDistance": 3,
+      "isReadied": false,
+      "isDestroyed": false
+    }
+  ],
+  "damage": [
+    {
+      "dieRoll": [1],
+      "damagePlacement": "Dead"
+    },
+    {
+      "dieRoll": [2, 3],
+      "damagePlacement": "S4"
+    },
+    {
+      "dieRoll": [4, 5],
+      "damagePlacement": "S3"
+    },
+    {
+      "dieRoll": [6],
+      "damagePlacement": "S2"
+    }
+  ]
+}
