@@ -1,5 +1,8 @@
 {
-  "points": 8,
+  "cardType": "Unit",
+  "cardCost": {
+    "points": 8
+  },
   "name": "Socrates Battle Rig",
   "description": "Tech Mech - Sharpshooter Loadout",
   "stats": {
