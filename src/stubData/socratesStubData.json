@@ -63,6 +63,7 @@
       "isDestroyed": false
     }
   ],
+  "abilities": ["Disciplined"],
   "damage": [
     {
       "dieRoll": [1],
