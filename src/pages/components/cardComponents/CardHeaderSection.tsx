@@ -1,5 +1,4 @@
 import React from 'react';
-import { CardPointCost } from '../../types/cardTypes';
 
 interface CardHeaderSectionProps {
   points: number,

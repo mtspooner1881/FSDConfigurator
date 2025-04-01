@@ -39,5 +39,6 @@ export type UnitCardType = {
   description: string;
   stats: UnitStatsType;
   equipment: UnitEquipmentType[];
+  abilities: string[];
   damage: UnitDamageType[];
 };

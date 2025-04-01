@@ -4,6 +4,7 @@ import { CardHeaderSection } from '../cardComponents/CardHeaderSection';
 import { CardStatsSection } from '../cardComponents/CardStatsSection';
 import { CardDamageTableSection } from '../cardComponents/CardDamageTableSection';
 import { CardActionSection } from '../cardComponents/CardActionSection';
+import { CardAbilitiesSection } from '../cardComponents/CardAbilitiesSection';
 
 export default function UnitCard(unitCard: UnitCardType): React.JSX.Element {
   return (
@@ -16,6 +17,7 @@ export default function UnitCard(unitCard: UnitCardType): React.JSX.Element {
       />
       <CardStatsSection {...unitCard} />
       <CardActionSection {...unitCard} />
+      <CardAbilitiesSection abilities={unitCard.abilities} />
       <CardDamageTableSection {...unitCard} />
     </section>
   );
